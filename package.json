@@ -1,0 +1,28 @@
+{
+  "name": "flushable",
+  "version": "1.0.0",
+  "description": "A flushable timeout function",
+  "main": "index.js",
+  "repository": "git@github.com:petegleeson/flushable.git",
+  "author": "Pete Gleeson <pgleeson@atlassian.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/jest"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/preset-flow": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^23.4.2",
+    "flow-bin": "^0.78.0",
+    "flow-typed": "^2.5.1",
+    "jest": "^23.4.2"
+  }
+}
