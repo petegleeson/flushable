@@ -2,12 +2,15 @@
   "name": "flushable",
   "version": "1.0.0",
   "description": "A flushable timeout function",
-  "main": "index.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "repository": "git@github.com:petegleeson/flushable.git",
   "author": "Pete Gleeson <pgleeson@atlassian.com>",
   "license": "MIT",
   "scripts": {
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "build": "rm -rf ./dist && node_modules/rollup/bin/rollup -c"
   },
   "jest": {
     "testEnvironment": "node",
@@ -23,6 +26,9 @@
     "babel-jest": "^23.4.2",
     "flow-bin": "^0.78.0",
     "flow-typed": "^2.5.1",
-    "jest": "^23.4.2"
+    "jest": "^23.4.2",
+    "rollup": "^0.64.1",
+    "rollup-plugin-babel": "^4.0.0-beta.8",
+    "rollup-plugin-execute": "^1.0.0"
   }
 }
